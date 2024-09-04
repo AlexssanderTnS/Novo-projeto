@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#contato {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    font-size: large;
+    justify-content: space-around;    
+}
+
+#InfoPes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    font-size: large;
+    justify-content: space-around;    
+}
+
+#address {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    font-size: large;
+    justify-content: space-around;    
+}
+
+main section{
+    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+  
+}
+
+main{
+    background-color: rgb(165, 149, 149);
+    box-sizing: border-box;
+    height: 100vh;
+
+}
+
+input{
+    border-radius: 5px;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: start;
+    cursor: pointer;
+    pointer-events: painted;
+    
+}
+
+label{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 18px;
+}
