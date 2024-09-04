@@ -8,15 +8,16 @@
 <body>
     
     <main>
-        <div id="info">
-            <h1>Dados de contato</h1>
-             <div id="Apelido">
+        
+        <h1>Dados de contato</h1>
+        <section id="Contato">     
+            <div>
                 <label for="name">Como devemos te chamar:</label>
                 <input type="text" name=" " placeholder="Digite aqui" required>
-             </div>
+            </div>
 
-            <div id="email">
-                <label for="email">Insira seu email:</label>
+            <div>
+                <label for="email">Email:</label>
                 <input type="email" name="email"  placeholder="Digite aqui" required>
             </div>
         
@@ -26,26 +27,40 @@
             </div>
 
             <div>
-                <label for="phone">Digite seu telefone:</label>
+                <label for="phone">Telefone:</label>
                 <input type="tel" name="phone"  placeholder="Digite aqui" required>
             </div>
 
             <div>
-                <label for="phone2">Digite seu celular:</label>
-                <input type="" name="phone2"  placeholder="Digite aqui" required>
+                <label for="phone2">Celular:</label>
+                <input type="tel" name="phone2"  placeholder="Digite aqui" required>
             </div>
+        </section>
 
+        <section id="InfoPes">
             <h2>Informações Pessoais</h2>
 
-            <div id="rg">
+            <div>
                 <label for="name">Registro Geral:</label>
-                <input type="text" name="RG-Registro" placeholder="Registro Geral:" required>
+                <input type="text" name="RG-Registro" placeholder="Digite aqui" required>
             </div>
 
             <div>
-                <label for="email">Confirme seu email:</label>
-                <input type="email" name="email"  placeholder="Email:" required>
+                <label for="cpf">CPF:</label>
+                <input type="text" name="CPF"  placeholder="Digite aqui" required>
             </div>
+
+            <div>
+                <label for="nome">Nome Completo:</label>
+                <input type="text" name="nome" placeholder="Digite aqui" required>
+            </div>
+
+            <div>
+                <label for="nascimento">Data de nascimento:</label>
+                <input type="date" name="data" required>
+            </div>
+            
+        </section>
     </main>
         
 
