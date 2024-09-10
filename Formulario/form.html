@@ -8,62 +8,61 @@
     <title>Formulário</title>
 </head>
 <body>
-    
     <main>
-        <section id="contato">     
+        <section id="contact">    
             <h1>Dados de contato</h1>
             <div>
-                <label for="name">Como devemos te chamar:</label>
-                <input type="text" name="Nome" placeholder="Digite aqui..." required>
+                <label class="bold" for="nome">Como devemos te chamar:</label>
+                <input type="text" id="nome" placeholder="Digite aqui..." required>
             </div>
             
             <div>
-                <label for="name">Email:</label>
-                <input type="email" name="email"  placeholder="Digite aqui..." required>
+                <label class="bold" for="email">Email:</label>
+                <input type="email" id="email"  placeholder="Digite aqui..." required>
             </div>
             
             <div>
-                <label for="name">Confirme seu email:</label>
-                <input type="email" name="email"  placeholder="Digite aqui..." required>
+                <label class="bold" for="emailConfirmation">Confirme seu email:</label>
+                <input type="email" id="emailConfirmation"  placeholder="Digite aqui..." required>
             </div>
             
             <div>
-                <label for="name">Telefone:</label>
-                <input type="tel" name="phone"  placeholder="Digite aqui..." required>
+                <label class="bold" for="phone">Telefone:</label>
+                <input type="tel" id="phone"  placeholder="Digite aqui..." >
             </div>
             
             <div>
-                <label for="name">Celular:</label>
-                <input type="tel" name="phone2"  placeholder="Digite aqui..." required>
+                <label class="bold" for="cellphone">Celular:</label>
+                <input type="tel" id="cellphone"  placeholder="Digite aqui..." required>
             </div>
         </section>
         
-        <section id="InfoPes">
+        <section id="personalInfo">
             <h2>Informações Pessoais</h2>
             
             <div>
-                <label for="name">Registro Geral:</label>
-                <input type="text" name="RG-Registro" placeholder="Digite aqui..." required>
+                <label class="bold" for="RG-Registro">Registro Geral:</label>
+                <input type="text" id="RG-Registro" placeholder="Digite aqui..." required>
             </div>
             
             <div>
-                <label for="name">CPF:</label>
-                <input type="text" name="CPF"  placeholder="Digite aqui..." required>
+                <label class="bold" for="CPF">CPF:</label>
+                <input type="text" id="CPF"  placeholder="Digite aqui..." required>
             </div>
 
             <div>
-                <label for="name">Nome Completo:</label>
-                <input type="text" name="nome" placeholder="Digite aqui..." required>
+                <label class="bold" for="nomecom">Nome Completo:</label>
+                <input type="text" id="nomecom" placeholder="Digite aqui..." required>
             </div>
 
             
             <div>
-                <label for="name">Nome da Mãe:</label>
-                <input type="text" name="NomeMae" placeholder="Digite aqui..." required>
+                <label class="bold" for="NomeMae">Nome da Mãe:</label>
+                <input type="text" id="NomeMae" placeholder="Digite aqui..." >
             </div>
             <div>
-                <label for="name">Data de nascimento:</label>
-                <input type="date" name="data" required>
+                <label class="bold" for="data">Nascimento:</label>
+                <input type="date" id="data" required>
             </div>
         </section>
         
@@ -71,22 +70,32 @@
             <h1>Endereço</h1>
             
             <div>
-                <label for="name">Endereço residencial:</label>
-                <input type="text" name="Address" placeholder="Digite aqui..." required>
+                <label class="bold" for="Address">Endereço residencial:</label>
+                <input type="text" id="Address" placeholder="Digite aqui..." required>
             </div>
             
             <div>
-                <label for="name">Complemento:</label>
-                <input type="text" name="complemento"  placeholder="Número/logradouro..." required>
+                <label class="bold" for="numero">Número:</label>
+                <input type="text" id="numero" placeholder="Digite aqui..." required>
             </div>
             
             <div>
-                <label for="name">Referencia:</label>
-                <input type="text" name="referencia" placeholder="Loja, mercado, rua..." required>
+                <label class="bold" for="complemento">Complemento:</label>
+                <input type="text" id="complemento"  placeholder="logradouro..." >
             </div>
+            
+            <div>
+                <label class="bold" for="referencia">Referencia:</label>
+                <input type="text" id="referencia" placeholder="Loja, mercado, rua..." >
+            </div>
+
+            
+            
         </section>
+        
     </main>
-    <a href="https://www.flamengo.com.br/" target="_blank"> Clica aqui porra</a>
-    <script src=".form.js"></script>
+    <button type="button" class="login__button bold">Salvar Cadastro</button>
+    
+    <script src="./form.js"></script>
 </body>
 </html>

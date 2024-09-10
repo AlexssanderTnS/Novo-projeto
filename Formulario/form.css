@@ -1,61 +1,63 @@
 *{
-    margin: 0;
+    margin: 0; 
     padding: 0;
 }
-#contato {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 10px;
-    font-size: large;
-    justify-content: space-around;    
-}
 
-#InfoPes {
+body{
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 10px;
-    font-size: large;
-    justify-content: space-around;    
-}
-
-#address {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 10px;
-    font-size: large;
-    justify-content: space-around;    
-}
-
-main section{
-    justify-content: center;
-    justify-content: space-between;
     align-items: center;
-  
+    justify-content: center;
+    height: 100vh;
+    flex-direction: column;
+    background-color: #e3bf9769;
+    width: 100vw;
 }
 
 main{
-    background-color: rgb(165, 149, 149);
-    box-sizing: border-box;
-    height: 100vh;
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
 
+section{
+    background-color: #e3bf97c0;
+    padding: 20px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 350px;
+    width: 300px;
+}
+
+section div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
 input{
+    padding: 5px 10px;
     border-radius: 5px;
+    border: 0.4px solid #000;
     background-color: whitesmoke;
-    display: flex;
-    flex-direction: start;
-    cursor: pointer;
-    pointer-events: painted;
-    
 }
 
-label{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    font-size: 18px;
+.bold{
+    font-weight: bold;
+}
+
+button{
+    background-color:#e3c097;
+    padding: 10px 15px;
+    margin-top: 20px;
+    transition: transform 0.4s ease-in-out;
+    cursor: pointer;
+}
+
+button:hover{
+    transform: scale(1.2);
 }
