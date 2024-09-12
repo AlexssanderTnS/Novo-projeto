@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leitor de QR Code</title>
+    <style>
+        /* Estilização básica */
+        #reader {
+            width: 500px;
+            margin: 0 auto;
+        }
+        #result {
+            margin-top: 20px;
+            text-align: center;
+            font-size: 1.5em;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;">Leitor de QR Code</h1>
+    <div id="reader"></div>
+    <div id="result">Resultado: Nenhum QR Code lido ainda.</div>
+
+    <!-- Incluindo a biblioteca html5-qrcode -->
+    <script src="https://unpkg.com/html5-qrcode/minified/html5-qrcode.min.js"></script>
+    <script>
+        function onScanSuccess(decodedText, decodedResult) {
+            // Manipula o resultado do QR code aqui
+            document.getElementById('result').innerText = `Resultado: ${decodedText}`;
+        }
+
+        function onScanError(errorMessage) {
+            // Tratamento de erros (opcional)
+            console.error(`Erro: ${errorMessage}`);
+        }
+
+        // Configurar o leitor de QR code
+        const html5QrCode = new Html5Qrcode("reader");
+        const config = { fps: 10, qrbox: { width: 250, height: 250 } };
+
+        html5QrCode.start(
+            { facingMode: "environment" }, // Usa a câmera traseira
+            config,
+            onScanSuccess,
+            onScanError
+        ).catch(err => {
+            console.error(`Não foi possível iniciar o leitor de QR Code: ${err}`);
+        });
+    </script>
+</body>
+</html>
